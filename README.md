@@ -3,7 +3,7 @@
 ## Installation
 ```bash
 
-git clone ... && cd ...
+git clone git@github.com:shaggy-axel-apps/shop.git && cd shop
 python3.9 -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
