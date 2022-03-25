@@ -30,15 +30,15 @@
                 <div class="menu">
                     <div class="menu-item">
                         <img src="{% static 'img/menu/homepage.svg' %}" alt="homepage" class="homepage-icon" width="30">
-                        <a href="{% url 'home' %}">Home Page</a>
+                        <a href="{% url 'main:home' %}">Home Page</a>
                     </div>
                     <div class="menu-item">
                         <img src="{% static 'img/menu/products.svg' %}" alt="products" class="products-icon" width="30">
-                        <a href="{% url 'products' %}">Products</a>
+                        <a href="{% url 'main:products' %}">Products</a>
                     </div>
                     <div class="menu-item">
                         <img src="{% static 'img/menu/contacts.svg' %}" alt="contacts" class="contacts-icon" width="30">
-                        <a href="{% url 'contacts' %}">Contacts</a>
+                        <a href="{% url 'main:contacts' %}">Contacts</a>
                     </div>
                 </div>
                 <div class="brand">

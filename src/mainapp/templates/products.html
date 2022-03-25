@@ -11,16 +11,7 @@
         <h1>Products</h1>
         <input type="text"/>
     </div>
-    <div class="cards">
-        {% for product in products %}
-        <div class="card">
-            <img src="{% static 'img/products/monitor.png' %}" alt="monitor">
-            <div class="card-info">
-                <h3>{{ product.name }}</h3>
-                <p>Price: {{ product.price }}$</p>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+    {% include 'components/categories.html' %}
+    {% include 'components/products.html' %}
 
 {% endblock %}
