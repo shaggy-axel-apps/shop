@@ -1,20 +1,16 @@
-from typing import NamedTuple
 from django.shortcuts import render
 
+from mainapp.models import Product, ProductCategory
 
 def index(request):
     return render(request, 'index.html')
 
-class Product(NamedTuple):
-    name: str
-    price: int
 
 def products(request):
-    product_1, product_2 = Product(name="Monitor", price="500"), Product(name="Keyboard", price="1000")
+
     data = {
-        "products": [
-            product_1, product_2
-        ]
+        "products": Product.objects.all(),
+        "categories": ProductCategory.objects.all()
     }
     return render(request, 'products.html', data)
 
